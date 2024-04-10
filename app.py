@@ -2,23 +2,18 @@ from typing import List
 
 
 def list_operations(list1, list2, operations):
-    """
-    Perform various operations on two lists based on the provided operations string.
+    merged_list = list1 + list2
+    for operation in operations:
+        if operation == "M":
+            pass
+        elif operation == "R":
+            merged_list = list(set(merged_list))
+        elif operation == "S":
+            merged_list.sort()
+        else:
+            merged_list.sort(reverse=True)
 
-    Args:
-    - list1 (List[int]): The first list of integers.
-    - list2 (List[int]): The second list of integers.
-    - operations (str): A string containing a sequence of characters representing operations to be performed.
-                        Each character represents an operation:
-                        'M' - Merge the lists.
-                        'R' - Remove duplicates.
-                        'S' - Sort the list.
-                        'V' - Reverse the list.
-
-    Returns:
-    - List[int]: The result list after performing the specified operations.
-    """
-    pass
+    return merged_list
 
 
 # Sample test cases
