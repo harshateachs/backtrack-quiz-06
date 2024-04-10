@@ -12,15 +12,14 @@ The function should support the following operations:
 
 3. **Sort**: Sort the merged list in ascending order.
 
-4. **Reverse**: Reverse the order of elements in the merged list.
+4. **Reverse**: Sort the list in descending order.
 
 Your function should take a list of operations as input and perform them in the order specified. Each operation is represented by a character:
 - `'M'`: Merge
 - `'R'`: Remove Duplicates
 - `'S'`: Sort
-- `'V'`: Reverse
+- `'V'`: Sort (Descending)
 
-**Function Signature:**
 ```python
 def list_operations(list1: List[int], list2: List[int], operations: str) -> List[int]:
     pass
@@ -42,7 +41,7 @@ assert list_operations([7, 5, 3], [4, 2, 1], 'RMV') == [7, 5, 4, 3, 2, 1]
 **Submission Guidelines:**
 - Clone the repository.
 - Create a separate branch using the format `<name>`.
-- Implement the code within the specified time limit of 15 minutes.
+- Implement the code in ```app.py``` within the specified time limit of 15 minutes.
 - Push the changes to your branch.
 - Open a merge request to the main branch.
 

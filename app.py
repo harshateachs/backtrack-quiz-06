@@ -13,7 +13,7 @@ def list_operations(list1, list2, operations):
                         'M' - Merge the lists.
                         'R' - Remove duplicates.
                         'S' - Sort the list.
-                        'V' - Reverse the list.
+                        'V' - Sort the list in descending order.
 
     Returns:
     - List[int]: The result list after performing the specified operations.
